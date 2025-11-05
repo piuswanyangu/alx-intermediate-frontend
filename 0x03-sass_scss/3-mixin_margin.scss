@@ -1,0 +1,14 @@
+// define a mixin 
+// it will accept one parameter , $margin-value
+@mixin horizontal-margin($margin-value){
+    margin-left: $margin-value;
+    margin-right: $margin-value;
+}
+// assigning margin to body
+body{
+    @include horizontal-margin(10px);
+}
+// assigning margin to div tags
+div {
+    @include horizontal-margin(15px)
+}
